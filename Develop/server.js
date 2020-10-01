@@ -34,7 +34,7 @@ app.post("/api/notes", function(req,res){
         req.body.id = userNote.length;
         userNote.push(req.body);
         userNote = JSON.stringify(userNote);
-        fs.writeFile("db/db.json", userNote, "utf8", function(err){
+        fs.writeFile("Develop/db/db.json", userNote, "utf8", function(err){
             if (err) throw err;
         })
     res.json(JSON.parse(userNote));
