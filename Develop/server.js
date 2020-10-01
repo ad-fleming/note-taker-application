@@ -16,20 +16,20 @@ app.use(express.static("./Develop/public"));
 // Routes
 
 app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname, "./Develop/public", "index.html"))
+    res.sendFile(path.join(__dirname, "Develop/public", "index.html"))
 })
 
 app.get("/notes", function(req, res){
-    res.sendFile(path.join(__dirname, "./Develop/public", "notes.html"))
+    res.sendFile(path.join(__dirname, "Develop/public", "notes.html"))
 })
 
 app.get("/api/notes", function(req,res){
-    return res.sendFile(path.join(__dirname, "./Develop/db/db.json"))
+    return res.sendFile(path.join(__dirname, "Develop/db/db.json"))
 })
 
 app.post("/api/notes", function(req,res){
     try{
-        userNote = fs.readFileSync("./Develop/db/db.json", "utf8");
+        userNote = fs.readFileSync("Develop/db/db.json", "utf8");
         userNote = JSON.parse(userNote);
         req.body.id = userNote.length;
         userNote.push(req.body);
@@ -46,7 +46,7 @@ app.post("/api/notes", function(req,res){
 
 app.delete("/api/notes/:id", function(req,res){
     try{
-        userNote = fs.readFileSync("./db/db.json", "utf8")
+        userNote = fs.readFileSync("Develop/db/db.json", "utf8")
         userNote = JSON.parse(userNote);
         userNote = userNote.filter(function(note){
             return note.id != req.params.id
