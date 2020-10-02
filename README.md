@@ -15,7 +15,7 @@ Additionally, it was the first time we were required to deploy to Heroku. This p
 
 \* [Installation](##Installation)
 
-\* [Licensing](##Licesnsing)
+\* [Licensing](##Licensing)
 
 \* [Links](##Links)
 
