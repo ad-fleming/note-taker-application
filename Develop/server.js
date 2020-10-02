@@ -6,6 +6,8 @@ const fs = require ('fs');
 
 const app = express();
 
+const {v4: uuidv4} = require ("uuid");
+
 const PORT = process.env.PORT || 8080;
 
 // Set up middle ware to handle data parsing
@@ -31,7 +33,7 @@ app.post("/api/notes", function(req,res){
     try{
         userNote = fs.readFileSync("Develop/db/db.json", "utf8");
         userNote = JSON.parse(userNote);
-        req.body.id = userNote.length;
+        req.body.id = uuidv4();
         userNote.push(req.body);
         userNote = JSON.stringify(userNote);
         fs.writeFile("Develop/db/db.json", userNote, "utf8", function(err){
