@@ -7,12 +7,17 @@ Additionally, it was the first time we were required to deploy to Heroku. This p
 
 ## Table of Contents
 
-* [Challenges](##Challenges)
-* [Images](##Images)
-* [Contributors](##Contributors)
-* [Installation](##Installation)
-* [Licensing](##Licesnsing)
-* [Links](##Links)
+\* [Challenges](##Challenges)
+
+\* [Images](##Images)
+
+\* [Contributors](##Contributors)
+
+\* [Installation](##Installation)
+
+\* [Licensing](##Licesnsing)
+
+\* [Links](##Links)
 
 
 ## Challenges
