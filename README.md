@@ -6,18 +6,12 @@ In this activity we were required to set up a server and create _get_, _post_ an
 Additionally, it was the first time we were required to deploy to Heroku. This project runs on an Express and is served via Node and Express. Please feel free to read through below. 
 
 ## Table of Contents
-
-\* [Challenges](##Challenges)
-
-\* [Images](##Images)
-
-\* [Contributors](##Contributors)
-
-\* [Installation](##Installation)
-
-\* [Licensing](##Licensing)
-
-\* [Links](##Links)
+* [Challenges](##Challenges)
+* [Images](##Images)
+* [Contributors](##Contributors)
+* [Installation](##Installation)
+* [Licensing](##Licensing)
+* [Links](##Links)
 
 
 ## Challenges
